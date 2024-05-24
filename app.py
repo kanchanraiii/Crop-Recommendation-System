@@ -6,6 +6,13 @@ import os
 working_dir = os.path.dirname(os.path.abspath(__file__))
 model = pickle.load(open(f'{working_dir}/RF_Crop.sav', 'rb'))
 
+st.set_page_config(
+    page_title="Crop Recommedner",
+    layout="wide",
+    page_icon="🍀"
+    initial_sidebar_state="expanded",
+)
+
 # Custom CSS for styling
 st.markdown(
     """
@@ -30,7 +37,7 @@ if 'page' not in st.session_state:
     st.session_state.page = "Overview"
 
 # Sidebar
-st.sidebar.title("Navigation")
+st.sidebar.title("Crop Recommender")
 if st.sidebar.button("Overview"):
     st.session_state.page = "Overview"
 if st.sidebar.button("Get Recommendation"):
