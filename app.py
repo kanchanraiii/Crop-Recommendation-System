@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the RandomForest model
-model = pickle.load(open('RF_Crop.sav', 'rb'))
+model = pickle.load(open('./RF_Crop.sav', 'rb'))
 
 # Custom CSS for styling
 st.markdown(
