@@ -39,7 +39,7 @@ if st.sidebar.button("Get Recommendation"):
 if st.session_state.page == "Overview":
     st.title("Overview")
     st.subheader("Welcome to the Crop Recommendation App!")
-    st.image("image1.jpg",caption="Healthy Crops", use_column_width=True)
+    st.image("Images/image1.jpg",caption="Healthy Crops", use_column_width=True)
     
     st.write("""
         ### What This App Does
@@ -64,7 +64,7 @@ if st.session_state.page == "Overview":
         Decision Tree, Logistic Regression, Gaussian Naive Bayes.
         Random Forest has been selected based on the Cross Validation Accuracy & Test Accuracy
     """)
-    st.image("mod_comparison.png", use_column_width=True)
+    st.image("Images/mod_comparison.png", use_column_width=True)
     
     st.write("""
         ### Benefits of Using Crop Recommendation
