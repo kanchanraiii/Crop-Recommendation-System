@@ -1,9 +1,10 @@
 import streamlit as st
 import pickle
 import numpy as np
-
+import os
 # Load the RandomForest model
-model = pickle.load(open('./RF_Crop.sav', 'rb'))
+working_dir = os.path.dirname(os.path.abspath(__file__))
+model = pickle.load(open(f'{working_dir}/RF_Crop.sav', 'rb'))
 
 # Custom CSS for styling
 st.markdown(
