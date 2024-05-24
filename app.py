@@ -9,7 +9,7 @@ model = pickle.load(open(f'{working_dir}/RF_Crop.sav', 'rb'))
 st.set_page_config(
     page_title="Crop Recommedner",
     layout="wide",
-    page_icon="🍀"
+    page_icon="🍀",
     initial_sidebar_state="expanded",
 )
 
